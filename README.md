@@ -34,3 +34,9 @@ So basically - "recursive hnsw graph based on clustering". Also the top level sc
 No need to use HNSW on all the layers, we might use like siphash for toplevel clustering and then build hnsw per cluster.
 
 If RAM is a problem and we store data on DISK, this clustering might help us narrowthe data good enough so disk IO is not that big of a deal ? 
+
+
+https://github.com/qdrant/qdrant/blob/master/lib/quantization/src/encoded_vectors_pq.rs
+https://github.com/qdrant/qdrant/blob/master/lib/sparse/src/index/inverted_index/inverted_index_ram.rs
+https://crates.io/crates/roaring
+https://github.com/nnethercott/hannoy
